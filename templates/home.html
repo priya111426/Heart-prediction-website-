@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<style>
+</style>
+    <title>Welcome</title>
+  </head>
+  <body bgcolor="aqua">
+  <div class="container">
+  <nav class="navbar navbar-light bg-light">
+  <form class="form-inline">
+
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="/logout">Log out</a></button>
+  </form>
+  </nav>
+</div>
+<div class="container">
+  <form method="post" action="/reach">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Age</label>
+    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Age" name="a" required>
+
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputEmail1">Sex</label>
+    <input type="number" class="form-control" id="Sex" aria-describedby="emailHelp" placeholder="Sex" name="s" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Cp</label>
+    <input type="number" class="form-control" id="Cp" aria-describedby="emailHelp" placeholder="Chest Pressure" name="cp" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Trestbp</label>
+    <input type="number" class="form-control" id="Trestbp" aria-describedby="Trestbp" placeholder="Trestbp" name="tb" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Chol</label>
+    <input type="number" class="form-control" id="Chol" aria-describedby="Trestbp" placeholder="Chol" name="ch" required>
+
+  </div>
+ <div class="form-group">
+    <label for="exampleInputEmail1">Restecg</label>
+    <input type="number" class="form-control" id="Restecg" aria-describedby="Trestbp" placeholder="Restecg" name="rest" required>
+
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">Fbs</label>
+    <input type="number" class="form-control" id="Fbs" aria-describedby="Trestbp" placeholder="Fbs" name="fbs" required>
+
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Thalch</label>
+    <input type="number" class="form-control" id="Thalch" aria-describedby="Trestbp" placeholder="Thalch" name="thal" required>
+
+  </div>
+
+<div class="form-group">
+    <label for="exampleInputEmail1">Exercise induced</label>
+    <input type="number" class="form-control" id="Ed" aria-describedby="Trestbp" placeholder="Ed" name="ei" required>
+
+
+  </div>
+    <div class="form-group">
+    <label for="exampleInputEmail1">angina</label>
+    <input type="number" class="form-control" id="angina" aria-describedby="Trestbp" placeholder="angina" name="an" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Old peak</label>
+    <input type="number" class="form-control" id="Old peak" aria-describedby="Trestbp" placeholder="Old peak" name="old" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Slope</label>
+    <input type="number" class="form-control" id="Slope" aria-describedby="Trestbp" placeholder="Slope" name="slope" required>
+
+  </div>
+
+     <div class="form-group">
+    <label for="exampleInputEmail1">Ca</label>
+    <input type="number" class="form-control" id="Ca" aria-describedby="Trestbp" placeholder="Ca" name="ca" required>
+
+  </div>
+
+      <div class="form-group">
+    <label for="exampleInputEmail1">Thal</label>
+    <input type="number" class="form-control" id="Thal" aria-describedby="Trestbp" placeholder="Thal" name="th" required>
+
+  </div>
+
+  <div class="form-group">
+    <label for="exampleInputPassword1">Target</label>
+    <input type="number" class="form-control" id="Target" aria-describedby="Trestbp" placeholder="Target" name="tar" required>
+  </div>
+
+  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#mymodal"  onclick="setTimeout(myFunction, 7000);">Submit</button>
+      <script>
+
+           function validate(){
+
+
+
+            var age=document.getElementBygetElementsByName('a')
+               var  sex=document.getElementBygetElementsByName('s')
+      var  cp=document.getElementBygetElementsByName('cp')
+        var tb=document.getElementBygetElementsByName('tb')
+       var ch=document.getElementBygetElementsByName('ch')
+        var rest=document.getElementBygetElementsByName('rest')
+        var fbs=document.getElementBygetElementsByName('thal')
+        var ei=document.getElementBygetElementsByName('ei')
+        var an=document.getElementBygetElementsByName('an')
+        var old=document.getElementBygetElementsByName('old')
+        var slope=document.getElementBygetElementsByName('slope')
+        var ca=document.getElementBygetElementsByName('ca')
+        var th=document.getElementBygetElementsByName('th')
+        var tar=document.getElementBygetElementsByName('tar')
+
+
+
+      if(age.value.trim()==""){
+      alert("Age field can not be empty !!!");
+      return false;
+      }
+     if(sex.value.trim()=""){
+       alert("Last Name field can not be empty !!!");
+      return false;
+      }
+      else if(rest.value.trim()=""){
+       alert("email field can not be empty !!!");
+      return false;
+      }else if(dob.value.trim()=""){
+       alert("Dob field can not be empty !!!");
+      return false;
+      }else if(Phone.value.trim()=""){
+       alert("Phone number field can not be empty !!!");
+      return false;
+      }else if(address.value.trim()=""){
+       alert("Address field can not be empty !!!");
+      return false;
+      }
+      else{
+      true;
+      }
+
+
+
+
+      }
+
+
+function myFunction() {
+     var x = Math.floor((Math.random() * 20)+ 65);
+
+
+
+
+
+
+     document.getElementById("demo1").innerHTML ="Calculated ,Thank you";
+    document.getElementById("demo").innerHTML = x;
+
+}
+</script>
+</form>
+    <div class="container">
+    <div id="mymodal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <div class="jumbotron">
+  <h1 class="display-4">Hello !,</h1>
+  <p class="lead">To ensure good health: eat lightly, breathe deeply, live moderately, cultivate cheerfulness, and maintain an interest in life.”</p>
+  <hr class="my-4">
+  <p> <div class="modal-header">
+                <h4 id="demo1">Calculating......</h4>
+
+            </div></p>
+
+
+
+               <div class="first"  > <h3 id="demo"> </h3></div>
+   <div class="modal-footer">
+        <button type="button" class ="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+
+</div>
+
+        </div>
+
+
+    </div>
+    </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
